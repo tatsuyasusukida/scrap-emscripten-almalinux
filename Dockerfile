@@ -2,7 +2,7 @@ FROM almalinux:latest
 
 # 必要なパッケージのインストール
 RUN dnf update -y && \
-	dnf install -y git libatomic \
+	dnf install -y git libatomic jq \
 		make gcc gcc-c++ ncurses* libncurses* libpng* kernel-devel && \
 	dnf clean all
 
